@@ -63,19 +63,27 @@ $(document).ready(function () {
         var dotsContainer = $(".custom-dots");
         dotsContainer.html("");
         for (var i = 0; i < realItems; i++) {
-            dotsContainer.append("<button data-index='" + i + "'>" + (i + 1) + "</button>");
+            dotsContainer.append("<button data-index='" + i + "'>0" + (i + 1) + "</button>");
         }
         $(".custom-dots button").first().addClass("active");
-
+    
         $(".custom-dots button").click(function () {
             var index = $(this).data("index");
             owl.trigger("to.owl.carousel", [index, 300]);
         });
     }
-
+    
     function updateActiveDot(event) {
-        var realIndex = event.item.index % $(".owl-carousel .owl-stage > .owl-item:not(.cloned)").length; // اصلاح ایندکس
+        var realItems = $(".owl-carousel .owl-stage > .owl-item:not(.cloned)").length;
+        var currentIndex = event.item.index - event.relatedTarget._clones.length / 2; // اصلاح ایندکس
+    
+        if (currentIndex >= realItems) {
+            currentIndex = 0; // اگر لوپ فعال است، ریست به اول لیست
+        } else if (currentIndex < 0) {
+            currentIndex = realItems - 1; // برای جلوگیری از مقادیر منفی
+        }
+    
         $(".custom-dots button").removeClass("active");
-        $(".custom-dots button").eq(realIndex).addClass("active");
+        $(".custom-dots button").eq(currentIndex).addClass("active");
     }
 });
