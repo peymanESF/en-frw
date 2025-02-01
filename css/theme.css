@@ -34,7 +34,10 @@
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("fonts/IranYekan.ttf")
       format("truetype");
 }
-
+@font-face {
+  font-family: "futuraMediumBT";
+  src: url("/fonts/futuraMediumBT.woff") format("woff");
+}
 @font-face {
   font-family: "IranYekanLight";
   font-weight: normal;
@@ -1313,7 +1316,7 @@ body.light-yellow #footer-box > * {
 /***start new theme ***/
 body {
   min-height: 100vh;
-  font-family: futuraMediumBt;
+  font-family: "futuraMediumBT" !important;
   overflow-x: hidden;
   direction: ltr;
   background: transparent;
@@ -1336,6 +1339,11 @@ header {
   background: white;
   z-index: 1000; /* بالاتر از اسلایدر */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 122px;
+}
+header > .container {
+  height: 100%;
+  padding: 0;
 }
 .smoothScrollMenu {
   height: 100%;
@@ -1349,19 +1357,35 @@ header {
   padding: 0 25px;
   margin: 0;
 }
-.smoothScrollMenu ul a {
-  text-decoration: none;
+.smoothScrollMenu ul > li {
+  height: 100%;
+}
+.menu-item {
   color: var(--color-main);
+  padding: 10px 15px;
+  transition: 0.3s;
+  text-decoration: none;
   font-size: 11.74pt;
   font-weight: 900;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item.active {
+  background: var(--color-main); /* رنگ سبز برای آیتم فعال */
+  color: white;
 }
 .menu-btn,
 .search-btn {
-  background: none;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
-  color: #007b5e;
+  color: #fff;
+  background: var(--color-main);
+  border-radius: 100%;
+  padding: 10px 15px;
 }
 
 .mobile-menu {
@@ -1373,7 +1397,7 @@ header {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 60px;
+  top: 122px;
 }
 
 .mobile-menu ul {
@@ -1405,24 +1429,58 @@ header {
   object-fit: cover;
   aspect-ratio: 16/9;
 }
-
+.slider .caption h2 {
+  word-spacing: 10px;
+}
+.slider .caption p {
+  text-align: left;
+}
 .slider .caption {
   position: absolute;
-  top: 50%;
+  bottom: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 20px;
+  transform: translate(-50%, 0%);
+  background: var(--color-slider-back);
+  color: var(--color-slider-desc);
+  padding: 10px 45px;
   border-radius: 5px;
   text-align: center;
-  width: 80%;
+  width: 30%;
+  z-index: 1;
+}
+.btn-KnowMore {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+  background: var(--color-main);
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 25px;
+  font-size: 18px;
+  z-index: 2;
+}
+.btn-KnowMore:hover {
+  background: #fff !important;
+}
+.slider .slide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* مقدار مورد نیاز */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 0; /* پایین‌تر از متن اما بالای پس‌زمینه */
 }
 
 /* شماره‌بندی اسلایدها */
 .custom-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 6%;
   left: 20px;
   display: flex;
   gap: 10px;
@@ -1442,5 +1500,7 @@ header {
   background: white;
   color: black;
 }
-
+section:not(#home) {
+  height: 100vh;
+}
 /***end new theme ***/

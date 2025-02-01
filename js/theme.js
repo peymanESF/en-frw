@@ -1,5 +1,32 @@
 $(document).ready(function () {
-	// باز و بسته کردن منوی همبرگری
+    $(window).on("scroll", function () {
+        let scrollPos = $(document).scrollTop() + 100; // کمی آفست برای بهتر کار کردن
+        $(".menu-item").each(function () {
+            let sectionID = $(this).attr("href");
+            let section = $(sectionID);
+            if (section.length) {
+                let sectionTop = section.offset().top;
+                let sectionBottom = sectionTop + section.outerHeight();
+
+                if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                    $(".menu-item").removeClass("active");
+                    $(this).addClass("active");
+                }
+            }
+        });
+    });
+
+    // Smooth Scroll برای کلیک روی آیتم‌های منو
+    $(".menu-item").on("click", function (e) {
+        e.preventDefault();
+        let target = $(this).attr("href");
+        $("html, body").animate({
+                scrollTop: $(target).offset().top
+            },
+            800
+        );
+    });
+    // باز و بسته کردن منوی همبرگری
     $(".menu-btn").click(function () {
         $(".mobile-menu").slideToggle();
     });
@@ -8,12 +35,14 @@ $(document).ready(function () {
     $(".mobile-menu ul li a").click(function (e) {
         e.preventDefault();
         var target = $(this).attr("href");
-        $("html, body").animate({ scrollTop: $(target).offset().top - 70 }, 800);
+        $("html, body").animate({
+            scrollTop: $(target).offset().top - 70
+        }, 800);
         $(".mobile-menu").slideUp(); // بستن منو بعد از کلیک
     });
 
-     // اسلایدر با شماره‌بندی
-	 var owl = $(".owl-carousel").owlCarousel({
+    // اسلایدر با شماره‌بندی
+    var owl = $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
