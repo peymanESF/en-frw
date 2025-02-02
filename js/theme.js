@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).on("scroll", function () {
-        let scrollPos = $(document).scrollTop() + 100; // کمی آفست برای بهتر کار کردن
+        let scrollPos = $(document).scrollTop() + 130; // کمی آفست برای بهتر کار کردن
         $(".menu-item").each(function () {
             let sectionID = $(this).attr("href");
             let section = $(sectionID);
@@ -21,7 +21,7 @@ $(document).ready(function () {
         e.preventDefault();
         let target = $(this).attr("href");
         $("html, body").animate({
-                scrollTop: $(target).offset().top
+                scrollTop: $(target).offset().top - 122
             },
             800
         );
@@ -36,7 +36,7 @@ $(document).ready(function () {
         e.preventDefault();
         var target = $(this).attr("href");
         $("html, body").animate({
-            scrollTop: $(target).offset().top - 70
+            scrollTop: $(target).offset().top - 122
         }, 800);
         $(".mobile-menu").slideUp(); // بستن منو بعد از کلیک
     });
@@ -66,23 +66,23 @@ $(document).ready(function () {
             dotsContainer.append("<button data-index='" + i + "'>0" + (i + 1) + "</button>");
         }
         $(".custom-dots button").first().addClass("active");
-    
+
         $(".custom-dots button").click(function () {
             var index = $(this).data("index");
             owl.trigger("to.owl.carousel", [index, 300]);
         });
     }
-    
+
     function updateActiveDot(event) {
         var realItems = $(".owl-carousel .owl-stage > .owl-item:not(.cloned)").length;
         var currentIndex = event.item.index - event.relatedTarget._clones.length / 2; // اصلاح ایندکس
-    
+
         if (currentIndex >= realItems) {
             currentIndex = 0; // اگر لوپ فعال است، ریست به اول لیست
         } else if (currentIndex < 0) {
             currentIndex = realItems - 1; // برای جلوگیری از مقادیر منفی
         }
-    
+
         $(".custom-dots button").removeClass("active");
         $(".custom-dots button").eq(currentIndex).addClass("active");
     }
