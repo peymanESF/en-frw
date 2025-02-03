@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $('.card').click(function () {
+        var newsLink = $(this).find('.newsBtnMore a').prop('href');
+        window.location.href = newsLink;
+    });
+
     $(window).on("scroll", function () {
         let scrollPos = $(document).scrollTop() + 130; // کمی آفست برای بهتر کار کردن
         $(".menu-item").each(function () {
@@ -47,7 +52,7 @@ $(document).ready(function () {
         margin: 10,
         nav: false,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         items: 1,
         onInitialized: function (event) {
