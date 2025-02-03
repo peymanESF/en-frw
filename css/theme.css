@@ -1880,7 +1880,7 @@ header > .container {
 /* Ø¨Ø®Ø´ Ú©Ù„ÛŒ */
 .what-we-do {
   color: #000;
-  background: url("../img/what we do/whatwedobg.jpg") no-repeat;
+  background: url("../img/what we do/whatWeDoBg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
