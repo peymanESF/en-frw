@@ -1587,12 +1587,12 @@ header .logo img {
   width: 100%;
 }
 header {
-  position: fixed; /* Ù…Ù†Ùˆ Ù‡Ù…ÛŒØ´Ù‡ Ø¨Ø§Ù„Ø§ÛŒ ØµÙØ­Ù‡ Ø¨Ø§Ù‚ÛŒ Ù…ÛŒâ€ŒÙ…Ø§Ù†Ø¯ */
+  position: fixed; /* Ã™â€¦Ã™â€ Ã™Ë† Ã™â€¡Ã™â€¦Ã›Å’Ã˜Â´Ã™â€¡ Ã˜Â¨Ã˜Â§Ã™â€žÃ˜Â§Ã›Å’ Ã˜ÂµÃ™ÂÃ˜Â­Ã™â€¡ Ã˜Â¨Ã˜Â§Ã™â€šÃ›Å’ Ã™â€¦Ã›Å’Ã¢â‚¬Å’Ã™â€¦Ã˜Â§Ã™â€ Ã˜Â¯ */
   top: 0;
   left: 0;
   width: 100%;
   background: white;
-  z-index: 1000; /* Ø¨Ø§Ù„Ø§ØªØ± Ø§Ø² Ø§Ø³Ù„Ø§ÛŒØ¯Ø± */
+  z-index: 1000; /* Ã˜Â¨Ã˜Â§Ã™â€žÃ˜Â§Ã˜ÂªÃ˜Â± Ã˜Â§Ã˜Â² Ã˜Â§Ã˜Â³Ã™â€žÃ˜Â§Ã›Å’Ã˜Â¯Ã˜Â± */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   height: 122px;
 }
@@ -1629,7 +1629,7 @@ header > .container {
 }
 
 .menu-item.active {
-  background: var(--color-main); /* Ø±Ù†Ú¯ Ø³Ø¨Ø² Ø¨Ø±Ø§ÛŒ Ø¢ÛŒØªÙ… ÙØ¹Ø§Ù„ */
+  background: var(--color-main); /* Ã˜Â±Ã™â€ ÃšÂ¯ Ã˜Â³Ã˜Â¨Ã˜Â² Ã˜Â¨Ã˜Â±Ã˜Â§Ã›Å’ Ã˜Â¢Ã›Å’Ã˜ÂªÃ™â€¦ Ã™ÂÃ˜Â¹Ã˜Â§Ã™â€ž */
   color: white;
 }
 .menu-btn,
@@ -1677,17 +1677,19 @@ header > .container {
   text-decoration: none;
   font-size: 18px;
 }
+.mobile-menu .nav-item.dropdown > ul.show {    
+    background: #07c2ae;   
+  }
 @media (max-width: 768px) {
   .mobile-menu .nav-item.dropdown > ul.show {
     display: block;
-    background: #07c2ae;
-    position: relative !important;
+     position: relative !important;
     transform: none !important;
   }
 }
 .slider {
   position: relative;
-  margin-top: 0; /* Ø¯ÛŒÚ¯Ø± Ù†ÛŒØ§Ø²ÛŒ Ø¨Ù‡ Ù…Ø§Ø±Ø¬ÛŒÙ† Ø¨Ø§Ù„Ø§ Ù†ÛŒØ³Øª Ú†ÙˆÙ† body padding Ø¯Ø§Ø±Ø¯ */
+  margin-top: 0; /* Ã˜Â¯Ã›Å’ÃšÂ¯Ã˜Â± Ã™â€ Ã›Å’Ã˜Â§Ã˜Â²Ã›Å’ Ã˜Â¨Ã™â€¡ Ã™â€¦Ã˜Â§Ã˜Â±Ã˜Â¬Ã›Å’Ã™â€  Ã˜Â¨Ã˜Â§Ã™â€žÃ˜Â§ Ã™â€ Ã›Å’Ã˜Â³Ã˜Âª Ãšâ€ Ã™Ë†Ã™â€  body padding Ã˜Â¯Ã˜Â§Ã˜Â±Ã˜Â¯ */
 }
 
 .slider .slide {
@@ -1739,12 +1741,12 @@ header > .container {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* Ù…Ù‚Ø¯Ø§Ø± Ù…ÙˆØ±Ø¯ Ù†ÛŒØ§Ø² */
+  height: 200px; /* Ã™â€¦Ã™â€šÃ˜Â¯Ã˜Â§Ã˜Â± Ã™â€¦Ã™Ë†Ã˜Â±Ã˜Â¯ Ã™â€ Ã›Å’Ã˜Â§Ã˜Â² */
   background: linear-gradient(to top, rgb(0 0 0) 0%, rgba(0, 0, 0, 0) 100%);
-  z-index: 0; /* Ù¾Ø§ÛŒÛŒÙ†â€ŒØªØ± Ø§Ø² Ù…ØªÙ† Ø§Ù…Ø§ Ø¨Ø§Ù„Ø§ÛŒ Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ */
+  z-index: 0; /* Ã™Â¾Ã˜Â§Ã›Å’Ã›Å’Ã™â€ Ã¢â‚¬Å’Ã˜ÂªÃ˜Â± Ã˜Â§Ã˜Â² Ã™â€¦Ã˜ÂªÃ™â€  Ã˜Â§Ã™â€¦Ã˜Â§ Ã˜Â¨Ã˜Â§Ã™â€žÃ˜Â§Ã›Å’ Ã™Â¾Ã˜Â³Ã¢â‚¬Å’Ã˜Â²Ã™â€¦Ã›Å’Ã™â€ Ã™â€¡ */
 }
 
-/* Ø´Ù…Ø§Ø±Ù‡â€ŒØ¨Ù†Ø¯ÛŒ Ø§Ø³Ù„Ø§ÛŒØ¯Ù‡Ø§ */
+/* Ã˜Â´Ã™â€¦Ã˜Â§Ã˜Â±Ã™â€¡Ã¢â‚¬Å’Ã˜Â¨Ã™â€ Ã˜Â¯Ã›Å’ Ã˜Â§Ã˜Â³Ã™â€žÃ˜Â§Ã›Å’Ã˜Â¯Ã™â€¡Ã˜Â§ */
 .custom-dots {
   position: absolute;
   bottom: 6%;
@@ -1800,6 +1802,7 @@ header > .container {
   .mobile-menu ul li a {
     color: white;
     text-decoration: none;
+    white-space: normal;
   }
 
   .caption {
@@ -1826,20 +1829,20 @@ header > .container {
   }
 }
 
-/* Ø¨Ø®Ø´ Ú©Ù„ÛŒ "Who We Are" */
+/* Ã˜Â¨Ã˜Â®Ã˜Â´ ÃšÂ©Ã™â€žÃ›Å’ "Who We Are" */
 .who-we-are {
   color: #333;
 }
 
-/* Ø§Ø³ØªØ§ÛŒÙ„ Ø¹Ù†ÙˆØ§Ù† */
+/* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã˜Â¹Ã™â€ Ã™Ë†Ã˜Â§Ã™â€  */
 .who-we-are h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #00a99d; /* Ø±Ù†Ú¯ Ù…Ø´Ø§Ø¨Ù‡ Ø·Ø±Ø§Ø­ÛŒ */
+  color: #00a99d; /* Ã˜Â±Ã™â€ ÃšÂ¯ Ã™â€¦Ã˜Â´Ã˜Â§Ã˜Â¨Ã™â€¡ Ã˜Â·Ã˜Â±Ã˜Â§Ã˜Â­Ã›Å’ */
   font-family: "Futura Hv BT";
 }
 
-/* Ø§Ø³ØªØ§ÛŒÙ„ Ù¾Ø§Ø±Ø§Ú¯Ø±Ø§Ùâ€ŒÙ‡Ø§ */
+/* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã™Â¾Ã˜Â§Ã˜Â±Ã˜Â§ÃšÂ¯Ã˜Â±Ã˜Â§Ã™ÂÃ¢â‚¬Å’Ã™â€¡Ã˜Â§ */
 .who-we-are p {
   font-size: 18px;
   line-height: 1.8;
@@ -1847,26 +1850,26 @@ header > .container {
   font-family: "Futura Lt BT";
 }
 
-/* Ø¨Ø±Ø¬Ø³ØªÙ‡ Ú©Ø±Ø¯Ù† Ú©Ù„Ù…Ù‡ "NRWO" */
+/* Ã˜Â¨Ã˜Â±Ã˜Â¬Ã˜Â³Ã˜ÂªÃ™â€¡ ÃšÂ©Ã˜Â±Ã˜Â¯Ã™â€  ÃšÂ©Ã™â€žÃ™â€¦Ã™â€¡ "NRWO" */
 .who-we-are .highlight {
   color: #00a99d;
   font-weight: bold;
 }
 
-/* Ø§Ø³ØªØ§ÛŒÙ„ Ù„ÛŒØ³Øª */
+/* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã™â€žÃ›Å’Ã˜Â³Ã˜Âª */
 .who-we-are ul {
   padding-left: 0;
   font-size: 18px;
 }
 
-/* Ø¢ÛŒØªÙ…â€ŒÙ‡Ø§ÛŒ Ù„ÛŒØ³Øª */
+/* Ã˜Â¢Ã›Å’Ã˜ÂªÃ™â€¦Ã¢â‚¬Å’Ã™â€¡Ã˜Â§Ã›Å’ Ã™â€žÃ›Å’Ã˜Â³Ã˜Âª */
 .who-we-are ul li {
   margin: 5px 0;
   font-weight: normal;
   font-family: "Futura Lt BT";
 }
 
-/* ØªÙ†Ø¸ÛŒÙ…Ø§Øª Ø±ÛŒØ³Ù¾Ø§Ù†Ø³ÛŒÙˆ Ø¨Ø±Ø§ÛŒ Ù…ÙˆØ¨Ø§ÛŒÙ„ */
+/* Ã˜ÂªÃ™â€ Ã˜Â¸Ã›Å’Ã™â€¦Ã˜Â§Ã˜Âª Ã˜Â±Ã›Å’Ã˜Â³Ã™Â¾Ã˜Â§Ã™â€ Ã˜Â³Ã›Å’Ã™Ë† Ã˜Â¨Ã˜Â±Ã˜Â§Ã›Å’ Ã™â€¦Ã™Ë†Ã˜Â¨Ã˜Â§Ã›Å’Ã™â€ž */
 @media (max-width: 768px) {
   .who-we-are h1 {
     font-size: 28px;
@@ -1877,7 +1880,7 @@ header > .container {
     font-size: 16px;
   }
 }
-/* Ø¨Ø®Ø´ Ú©Ù„ÛŒ */
+/* Ã˜Â¨Ã˜Â®Ã˜Â´ ÃšÂ©Ã™â€žÃ›Å’ */
 .what-we-do {
   color: #000;
   background: url("../img/what we do/whatWeDoBg.jpg") no-repeat;
@@ -1889,14 +1892,14 @@ header > .container {
   padding: 50px 0 !important;
 }
 
-/* Ø§Ø³ØªØ§ÛŒÙ„ Ø¹Ù†ÙˆØ§Ù† */
+/* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã˜Â¹Ã™â€ Ã™Ë†Ã˜Â§Ã™â€  */
 .what-we-do h1 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* Ø¨Ø§Ú©Ø³ ØªÛŒØ±Ù‡ Ù¾Ø´Øª Ø¢ÛŒÚ©ÙˆÙ†â€ŒÙ‡Ø§ */
+/* Ã˜Â¨Ã˜Â§ÃšÂ©Ã˜Â³ Ã˜ÂªÃ›Å’Ã˜Â±Ã™â€¡ Ã™Â¾Ã˜Â´Ã˜Âª Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€ Ã¢â‚¬Å’Ã™â€¡Ã˜Â§ */
 .what-we-do .dark-box {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -1904,7 +1907,7 @@ header > .container {
 .what-we-do .dark-box > div {
   margin-top: 45px;
 }
-/* Ø§Ø³ØªØ§ÛŒÙ„ Ø¢ÛŒÚ©ÙˆÙ†â€ŒÙ‡Ø§ */
+/* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€ Ã¢â‚¬Å’Ã™â€¡Ã˜Â§ */
 .what-we-do .icon-box {
   text-align: center;
   position: relative;
@@ -1915,7 +1918,7 @@ header > .container {
   transform: translate(-50%, -80%) rotate(180deg);
 }
 .what-we-do .icon-box img {
-  width: 80px; /* Ø§Ù†Ø¯Ø§Ø²Ù‡ Ø¢ÛŒÚ©ÙˆÙ† */
+  width: 80px; /* Ã˜Â§Ã™â€ Ã˜Â¯Ã˜Â§Ã˜Â²Ã™â€¡ Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€  */
   height: auto;
   margin-bottom: 10px;
 }
@@ -1932,14 +1935,14 @@ header > .container {
   z-index: 10;
   transition: 1s ease-in-out;
 }
-/* Ù…ØªÙ† Ø²ÛŒØ± Ø¢ÛŒÚ©ÙˆÙ† */
+/* Ã™â€¦Ã˜ÂªÃ™â€  Ã˜Â²Ã›Å’Ã˜Â± Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€  */
 .what-we-do .icon-box p {
   font-size: 16px;
   color: #fff;
   margin-top: 40px;
 }
 
-/* ØªÙ†Ø¸ÛŒÙ…Ø§Øª Ø±ÛŒØ³Ù¾Ø§Ù†Ø³ÛŒÙˆ */
+/* Ã˜ÂªÃ™â€ Ã˜Â¸Ã›Å’Ã™â€¦Ã˜Â§Ã˜Âª Ã˜Â±Ã›Å’Ã˜Â³Ã™Â¾Ã˜Â§Ã™â€ Ã˜Â³Ã›Å’Ã™Ë† */
 @media (max-width: 768px) {
   .what-we-do {
   }
@@ -2166,7 +2169,7 @@ section.presentation {
   padding: 30px 0;
 }
 
-/* استایل بخش‌ها */
+/* Ø§Ø³ØªØ§ÛŒÙ„ Ø¨Ø®Ø´â€ŒÙ‡Ø§ */
 .presentation .section {
   flex: 1;
   padding: 40px;
@@ -2180,7 +2183,7 @@ section.presentation {
   cursor: pointer;
 }
 
-/* ایجاد افکت متن شفاف */
+/* Ø§ÛŒØ¬Ø§Ø¯ Ø§ÙÚ©Øª Ù…ØªÙ† Ø´ÙØ§Ù */
 .presentation .section h2 {
   font-size: 32px;
   text-transform: uppercase;
@@ -2201,7 +2204,7 @@ section.presentation {
   opacity: 0.9;
 }
 
-/* پس‌زمینه تصاویر هنگام هاور */
+/* Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ ØªØµØ§ÙˆÛŒØ± Ù‡Ù†Ú¯Ø§Ù… Ù‡Ø§ÙˆØ± */
 .presentation .section::before {
   content: "";
   position: absolute;
@@ -2216,7 +2219,7 @@ section.presentation {
   z-index: -1;
 }
 
-/* تصاویر اختصاصی برای هر بخش */
+/* ØªØµØ§ÙˆÛŒØ± Ø§Ø®ØªØµØ§ØµÛŒ Ø¨Ø±Ø§ÛŒ Ù‡Ø± Ø¨Ø®Ø´ */
 .presentation .forest::before {
   background-image: url("../img/present/item1.png");
 }
@@ -2230,7 +2233,7 @@ section.presentation {
   background-image: url("../img/present/item4.png");
 }
 
-/* افکت هاور */
+/* Ø§ÙÚ©Øª Ù‡Ø§ÙˆØ± */
 .presentation .section:hover::before {
   opacity: 1;
 }
@@ -2240,7 +2243,7 @@ section.presentation {
   -webkit-text-stroke: 0;
 }
 
-/* حالت ریسپانسیو */
+/* Ø­Ø§Ù„Øª Ø±ÛŒØ³Ù¾Ø§Ù†Ø³ÛŒÙˆ */
 @media (min-width: 768px) and (max-width: 1366px) {
   .presentation .section {
     padding: 0;
@@ -2258,7 +2261,7 @@ section.presentation {
 }
 /*** footer ***/
 .footer {
-  background-color: #07c2ae; /* رنگ پس‌زمینه مشابه تصویر */
+  background-color: #07c2ae; /* Ø±Ù†Ú¯ Ù¾Ø³â€ŒØ²Ù…ÛŒÙ†Ù‡ Ù…Ø´Ø§Ø¨Ù‡ ØªØµÙˆÛŒØ± */
   color: white;
   padding: 40px 20px;
 }
