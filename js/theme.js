@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(window).on("scroll", function () {
         let scrollPos = $(document).scrollTop() + 130; // کمی آفست برای بهتر کار کردن
         $(".menu-item").each(function () {
-            let sectionID = $(this).attr("href");
+            let sectionID = $(this).attr("ItemID");
             let section = $(sectionID);
             if (section.length) {
                 let sectionTop = section.offset().top;
@@ -20,32 +20,34 @@ $(document).ready(function () {
             }
         });
     });
-
+    /*
     // Smooth Scroll برای کلیک روی آیتم‌های منو
     $(".menu-item").on("click", function (e) {
         e.preventDefault();
-        let target = $(this).attr("href");
+        let target = $(this).attr("ItemID");
         $("html, body").animate({
                 scrollTop: $(target).offset().top - 122
             },
             800
         );
     });
+    */
+
     // باز و بسته کردن منوی همبرگری
     $(".menu-btn").click(function () {
         $(".mobile-menu").slideToggle();
     });
-
+    /*
     // اسکرول نرم به بخش‌های مختلف
     $(".mobile-menu ul li a").click(function (e) {
         e.preventDefault();
-        var target = $(this).attr("href");
+        var target = $(this).attr("ItemID");
         $("html, body").animate({
             scrollTop: $(target).offset().top - 122
         }, 800);
         $(".mobile-menu").slideUp(); // بستن منو بعد از کلیک
     });
-
+    */
     // اسلایدر با شماره‌بندی
     var owl = $(".owl-carousel").owlCarousel({
         loop: true,

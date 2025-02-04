@@ -2296,7 +2296,6 @@ footer .row:has(.footerLogo) {
   vertical-align: middle;
   transform-origin: center right 3px;
   transition: .3s;
-  !i;!;
 }
 .footer a:hover:before{
   border: 6px solid transparent;
