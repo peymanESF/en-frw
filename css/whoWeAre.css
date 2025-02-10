@@ -1,0 +1,129 @@
+body:has(section#whoWeArePage):before{
+    content:'';
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    margin-top:122px;
+    background: url(../img/who%20we%20are/tree-right.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:-1;
+}
+#whoWeArePage{
+    margin:50px 0 50px 0px;
+    padding: 50px 0 50px 0;
+}
+#whoWeArePage .container {
+    display: flex;
+    width: 82%;
+    /* background: white; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 10px; */
+    overflow: hidden;
+    padding: 0;
+    height: 100%;
+    margin-top: -50px;
+}
+#whoWeArePage .content > .content-section:not(.hidden){
+    display:flex;
+    justify-content:space-between;
+}
+#whoWeArePage .content > .content-section:not(.hidden) .desc{
+    width:60%;
+    margin-right:20px;
+}
+#whoWeArePage .content > .content-section:not(.hidden) .img{
+    width:40%;
+    padding-top: 50px;
+}
+#whoWeArePage .content > .content-section:not(.hidden) .desc p,
+#whoWeArePage .content > .content-section:not(.hidden) .desc li{
+    font-weight:normal;
+    font-family: 'Futura Lt BT';
+}
+#whoWeArePage .content > .content-section:not(.hidden) .desc ul{
+    list-style: decimal;
+}
+#whoWeArePage .pageMenu {
+    width: 30%;
+    /* background: #1e7c6b; */
+    padding: 70px 20px 20px 3px;
+    color: #1e7c6b;
+    height: 100%;
+}
+
+#whoWeArePage .pageMenu-item {
+    padding: 25px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    /* border-radius: 5px; */
+    margin-bottom: 5px;
+    font-weight: 900;
+    border-bottom: 1px solid grey;
+    font-family: 'Futura';
+}
+
+#whoWeArePage .pageMenu-item:hover, .pageMenu-item.active {
+    background: #159570;
+    color: #fff;
+}
+
+#whoWeArePage .content {
+    width: 70%;
+    padding: 30px 0px 30px 30px;
+}
+
+#whoWeArePage .content h2 {
+    margin-bottom: 10px;
+    font-family: 'Futura';
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#whoWeArePage .content img {
+    width: 100%;
+    max-height: 418px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
+.btn-KnowMore.aboutUs{
+    position:unset;
+}
+section#whoWeArePage .linkContainer{
+    text-align:right;
+}
+@media(max-width:1366px){
+    #whoWeArePage .container{
+        width:95%;
+        flex-direction: column;
+    }
+    #whoWeArePage .pageMenu{
+        padding:5px;
+        width: 100%;
+    }
+    #whoWeArePage .content{
+        padding:10px;
+        width: 100%;
+    }
+    #whoWeArePage{
+        height:auto;
+        margin: 0;
+    }
+    #whoWeArePage .content > .content-section:not(.hidden){
+        flex-direction:column-reverse;        
+    }
+    #whoWeArePage .content > .content-section:not(.hidden) .desc,
+    #whoWeArePage .content > .content-section:not(.hidden) .img{
+        width:100%;
+    }
+    #whoWeArePage .content > .content-section:not(.hidden) .img{
+        margin-bottom:20px;
+    }
+    
+}
