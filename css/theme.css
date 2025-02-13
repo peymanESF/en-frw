@@ -1823,8 +1823,8 @@ ul.socialMediaUl li a:hover{
   background:transparent;
 }
 @media (max-width:768px){
-  ul.socialMediaUl{
-      flex-direction:row;
+  .mobile-menu ul.socialMediaUl{
+      flex-direction: row;
   }
 }
 /***end new theme ***/
@@ -1840,7 +1840,7 @@ ul.socialMediaUl li a:hover{
     padding: 10px;
   }
 
-  .mobile-menu ul {
+  .mobile-menu ul:not(.socialMediaUl) {
     padding: 0;
     list-style: none;
     flex-direction: column;
