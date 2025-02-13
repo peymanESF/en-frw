@@ -1617,19 +1617,29 @@ header > .container {
 }
 .menu-item {
   color: var(--color-main);
-  padding: 10px 15px;
+  margin: 10px;
   transition: 0.3s;
   text-decoration: none;
   font-size: 11.74pt;
   font-weight: 900;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+  padding: 0 5px;
 }
-
-.menu-item.active {
-  background: var(--color-main); /* Ã˜Â±Ã™â€ ÃšÂ¯ Ã˜Â³Ã˜Â¨Ã˜Â² Ã˜Â¨Ã˜Â±Ã˜Â§Ã›Å’ Ã˜Â¢Ã›Å’Ã˜ÂªÃ™â€¦ Ã™ÂÃ˜Â¹Ã˜Â§Ã™â€ž */
+.smoothScrollMenu ul li{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.menu-item:hover{
+  border-bottom: 3px solid #ea985f;
+}
+li:has(.menu-item.active ){
+  background: var(--color-main); /* Ã˜Â±Ã™â€ ÃšÂ¯ Ã˜Â³Ã˜Â¨Ã˜Â² Ã˜Â¨Ã˜Â±Ã˜Â§Ã›Å’ Ã˜Â¢Ã›Å’Ã˜ÂªÃ™â€¦ Ã™ÂÃ˜Â¹Ã˜Â§Ã™â€ž */  
+}
+.menu-item.active{
   color: white;
 }
 .menu-btn,
@@ -1698,7 +1708,7 @@ header > .container {
 
 .slider .slide img {
   width: 100%;
-  height: 800px;
+  height: 590px;
   object-fit: cover;
   aspect-ratio: 16/9;
 }
@@ -1776,12 +1786,55 @@ header > .container {
 .custom-dots button.active {
   scale: 1.5;
 }
+.d-d{
+  display: none;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin-in {
+  background: #007bb5;
+  color: white;
+}
+ul.socialMediaUl {
+  justify-content:center;
+  align-items:center;
+}
+ul.socialMediaUl li{
+  padding:0 10px;
+}
+ul.socialMediaUl li a{
+  font-size:24px;
+  background: #01a493;
+  color: white;
+  padding:10px 15px;
+  transition:0.3 ease-in-out;
+}
+ul.socialMediaUl li a:hover{
+  background:transparent;
+}
+@media (max-width:768px){
+  ul.socialMediaUl{
+      flex-direction:row;
+  }
+}
 /***end new theme ***/
 @media (max-width: 992px) {
   .smoothScrollMenu {
     display: none;
   }
-
+  .d-d{
+    display: block;
+  }
   .mobile-menu {
     text-align: center;
     padding: 10px;
@@ -1915,7 +1968,7 @@ header > .container {
   cursor: pointer;
 }
 .what-we-do .icon-box:hover:before {
-  transform: translate(-50%, -80%) rotate(180deg);
+  transform: translate(-50%, -80%) rotate(30deg);
 }
 .what-we-do .icon-box img {
   width: 80px; /* Ã˜Â§Ã™â€ Ã˜Â¯Ã˜Â§Ã˜Â²Ã™â€¡ Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€  */
@@ -1933,7 +1986,7 @@ header > .container {
   background: url("../img/what we do/itemBg.png");
   background-size: 100% 100%;
   z-index: 10;
-  transition: 1s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 /* Ã™â€¦Ã˜ÂªÃ™â€  Ã˜Â²Ã›Å’Ã˜Â± Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€  */
 .what-we-do .icon-box p {
@@ -2059,9 +2112,6 @@ header > .container {
 }
 .card .card-body .newsBtnMore a:hover:after {
   opacity: 1;
-}
-.card .card-body:hover {
-  animation: movement 5s infinite;
 }
 @keyframes movement {
   0% {

@@ -49,13 +49,13 @@ $(document).ready(function () {
     });
     */
     // اسلایدر با شماره‌بندی
-    var owl = $(".owl-carousel").owlCarousel({
+    var owl = $("#home .owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         items: 1,
         onInitialized: function (event) {
             addCustomDots(event);
