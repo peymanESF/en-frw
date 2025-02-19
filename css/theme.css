@@ -1961,6 +1961,9 @@ ul.socialMediaUl li a:hover{
   margin-top: 45px;
 }
 /* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€ Ã¢â‚¬Å’Ã™â€¡Ã˜Â§ */
+.what-we-do a:has(.icon-box){
+  text-decoration:none;
+}
 .what-we-do .icon-box {
   text-align: center;
   position: relative;
@@ -1968,21 +1971,22 @@ ul.socialMediaUl li a:hover{
   cursor: pointer;
 }
 .what-we-do .icon-box:hover:before {
-  transform: translate(-50%, -80%) rotate(30deg);
+  transform: translate(-50%, -0%) rotate(30deg);
 }
 .what-we-do .icon-box img {
   width: 80px; /* Ã˜Â§Ã™â€ Ã˜Â¯Ã˜Â§Ã˜Â²Ã™â€¡ Ã˜Â¢Ã›Å’ÃšÂ©Ã™Ë†Ã™â€  */
   height: auto;
   margin-bottom: 10px;
+  margin-top: 35px;
 }
 .what-we-do .icon-box:before {
   content: "";
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -0%);
   background: url("../img/what we do/itemBg.png");
   background-size: 100% 100%;
   z-index: 10;
@@ -1993,6 +1997,7 @@ ul.socialMediaUl li a:hover{
   font-size: 16px;
   color: #fff;
   margin-top: 40px;
+  text-decoration: none;
 }
 
 /* Ã˜ÂªÃ™â€ Ã˜Â¸Ã›Å’Ã™â€¦Ã˜Â§Ã˜Âª Ã˜Â±Ã›Å’Ã˜Â³Ã™Â¾Ã˜Â§Ã™â€ Ã˜Â³Ã›Å’Ã™Ë† */
@@ -2009,6 +2014,7 @@ ul.socialMediaUl li a:hover{
 
   .what-we-do .icon-box p {
     font-size: 14px;
+    margin-top: 60px;
   }
 }
 /*** latest news ***/
