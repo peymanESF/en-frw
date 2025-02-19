@@ -1,7 +1,7 @@
 /* Ø³Ú©Ø´Ù† Ø§ØµÙ„ÛŒ */
 .hero {
   position: relative;
-  height: 85vh;
+  height: calc(100vh - 150px);
   background: url("forest.jpg") no-repeat center center/cover;
   display: flex;
   align-items: start;
