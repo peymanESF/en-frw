@@ -8,7 +8,26 @@
   justify-content: start;
   color: white;
 }
-
+.overlay#WatershedManagement {
+  background: url(../img/internalPage/WatershedManagementBg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#RangelanManagementBg {
+  background: url(../img/internalPage/RangelanManagementBg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#InternationalCooperation {
+  background: url(../img/internalPage/InternationalCooperation.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#Conservation {
+  background: url(../img/internalPage/Conservation.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .overlay {
   position: absolute;
   top: 0;
