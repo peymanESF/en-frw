@@ -28,6 +28,53 @@
   background-size: cover;
   background-position: center;
 }
+/**/
+.overlay#Biodiversity {
+  background: url(../img/internalPage/Biodiversity.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#ClimateChange {
+  background: url(../img/internalPage/ClimateChange.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#LandDegradationNeutrality {
+  background: url(../img/internalPage/LandDegradationNeutrality.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#Forest {
+  background: url(../img/internalPage/Forest.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#AboutUs {
+  background: url(../img/internalPage/AboutUs.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#TheNRWOAtAGlance {
+  background: url(../img/internalPage/TheNRWOAtAGlance.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#Chairperson {
+  background: url(../img/internalPage/Chairperson.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#FocalPoint {
+  background: url(../img/internalPage/FocalPoint.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay#SustainableDevelopmentGoals {
+  background: url(../img/internalPage/SustainableDevelopmentGoals.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/**/
 .overlay {
   position: absolute;
   top: 0;

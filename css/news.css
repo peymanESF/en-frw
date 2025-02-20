@@ -1,0 +1,12 @@
+@media (min-width:768px){
+    #newsPage .newsRightCol .card .card-body .newsImg{
+        margin-right: 50px;
+    }
+    #newsPage .newsRightCol .card .card-body {
+        justify-content: normal;
+    }
+    #newsPage .newsRightCol .card .card-body .newsDesc{
+        width: calc(100% - 200px);
+        min-height: 100px;
+    }
+}
