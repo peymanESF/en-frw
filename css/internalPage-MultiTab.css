@@ -102,7 +102,9 @@
   height: calc(100% - 65px);
   padding: 25px;
 }
-
+.content #main-text {
+  padding: 0 130px;
+}
 .content h1 {
   font-size: 48px;
   margin-bottom: 10px;
@@ -153,5 +155,8 @@
     height: auto;
     max-height: 50%;
     overflow-y: scroll;
+  }
+  .content #main-text {
+    padding: 0;
   }
 }
