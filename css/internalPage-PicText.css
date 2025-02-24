@@ -1,0 +1,58 @@
+body {
+  min-height: auto;
+  position: relative;
+}
+body[tab="who we are"]:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/internalPage/whoWeAre-InternalBg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+#Chareperson,
+#Chareperson > .container {
+  position: relative;
+}
+#Chareperson > .container {
+  background: #efeeee;
+  padding: 0;
+}
+#Chareperson > .container:before {
+  content: "";
+  width: 261px;
+  height: 100%;
+  max-height: 800px;
+  position: absolute;
+  top: 0;
+  right: -130px;
+  background: url(../img/internalPage/tree.png) no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  z-index: 1;
+}
+.topPic img {
+  width: 100%;
+  max-height: 500px;
+}
+#Chareperson > .container > .content {
+  padding: 10px 100px;
+}
+#Chareperson .content p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Futura Lt BT";
+}
+@media (max-width: 768px) {
+  #Chareperson > .container > .content {
+    padding: 20px 20px 20px 20px;
+    width: calc(100% - 130px);
+  }
+  #Chareperson {
+    overflow: hidden;
+  }
+}
