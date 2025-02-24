@@ -1,4 +1,4 @@
-/* Ø³Ú©Ø´Ù† Ø§ØµÙ„ÛŒ */
+/* Ã˜Â³ÃšÂ©Ã˜Â´Ã™â€  Ã˜Â§Ã˜ÂµÃ™â€žÃ›Å’ */
 .hero {
   position: relative;
   height: calc(100vh - 150px);
@@ -111,10 +111,9 @@
 .content p {
   font-size: 18px;
   padding: 0;
-  margin: 0;
 }
 
-/* Ø§Ø³ØªØ§ÛŒÙ„ ØªØ¨â€ŒÙ‡Ø§ */
+/* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã˜ÂªÃ˜Â¨Ã¢â‚¬Å’Ã™â€¡Ã˜Â§ */
 .tabs {
   display: flex;
   justify-content: start;

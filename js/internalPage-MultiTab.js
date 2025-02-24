@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    firstLoadContent();
+
     $(".tab").click(function () {
         // تغییر تب فعال
         $(".tab").removeClass("active");
@@ -6,7 +8,7 @@ $(document).ready(function () {
 
         // دریافت داده‌های مربوطه از تب انتخاب‌شده
         var newTitle = $(this).attr("data-title");
-        var newText = $(this).attr("data-text");
+        var newText = $('.contentTab.d-none', this).html();
 
         // تغییر متن‌ها در صفحه
         $("#main-title").fadeOut(200, function () {
@@ -14,7 +16,20 @@ $(document).ready(function () {
         });
 
         $("#main-text").fadeOut(200, function () {
-            $(this).text(newText).fadeIn(200);
+            if (newText != null)
+                $(this).html(newText).fadeIn(200);
+            else
+                $(this).html("").fadeIn(200);
         });
     });
+
+    function firstLoadContent() {
+        var newTitle = $(".tab.active").attr("data-title");
+        var newText = $('.tab.active .contentTab.d-none').html();
+        $("#main-title").text(newTitle);
+        if (newText != null)
+            $("#main-text").html(newText).fadeIn(200);
+        else
+            $("#main-text").html("").fadeIn(200);
+    }
 });
