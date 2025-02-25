@@ -15,7 +15,7 @@ $(document).ready(function () {
             $(this).text(newTitle).fadeIn(200);
         });
 
-        $("#main-text").fadeOut(200, function () {
+        $("#main-text .lineContainer").fadeOut(200, function () {
             if (newText != null)
                 $(this).html(newText).fadeIn(200);
             else
@@ -28,8 +28,8 @@ $(document).ready(function () {
         var newText = $('.tab.active .contentTab.d-none').html();
         $("#main-title").text(newTitle);
         if (newText != null)
-            $("#main-text").html(newText).fadeIn(200);
+            $("#main-text .lineContainer").html(newText).fadeIn(200);
         else
-            $("#main-text").html("").fadeIn(200);
+            $("#main-text .lineContainer").html("").fadeIn(200);
     }
 });

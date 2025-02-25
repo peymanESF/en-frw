@@ -103,16 +103,24 @@
   padding: 25px;
 }
 .content #main-text {
-  padding: 0 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content #main-text .lineContainer {
+  max-width: 800px;
 }
 .content h1 {
-  font-size: 48px;
   margin-bottom: 10px;
 }
-
+.content #main-title {
+  text-align: center;
+  margin-bottom: 36px;
+}
 .content p {
-  font-size: 18px;
+  font-size: 14px;
   padding: 0;
+  text-align: justify;
 }
 
 /* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â§Ã›Å’Ã™â€ž Ã˜ÂªÃ˜Â¨Ã¢â‚¬Å’Ã™â€¡Ã˜Â§ */
