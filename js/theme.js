@@ -4,6 +4,7 @@ $(document).ready(function () {
     window.location.href = newsLink;
   });
 
+  /*
   $(window).on("scroll", function () {
     let scrollPos = $(document).scrollTop() + 130; // کمی آفست برای بهتر کار کردن
     $(".menu-item").each(function () {
@@ -20,8 +21,9 @@ $(document).ready(function () {
       }
     });
   });
+  */
 
-  
+
   /*
     // Smooth Scroll برای کلیک روی آیتم‌های منو
     $(".menu-item").on("click", function (e) {
