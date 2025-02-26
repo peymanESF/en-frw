@@ -1837,6 +1837,10 @@ ul.socialMediaUl {
 ul.socialMediaUl li {
   padding: 0 10px;
 }
+button.dropdown-toggle {
+  background: #01a493;
+  color: white;
+}
 ul.socialMediaUl li a {
   font-size: 24px;
   background: #01a493;
@@ -1893,7 +1897,9 @@ ul.socialMediaUl li a:hover {
     white-space: normal;
     padding: 10px;
   }
-
+  .mobile-menu ul li a.nav-link {
+    display: inline-block;
+  }
   .caption {
     width: 90%;
   }
