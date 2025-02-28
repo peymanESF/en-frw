@@ -202,7 +202,7 @@ img#newsID {
     }
     .newsRightCol .card .card-body .newsDesc{
         width:100%;
-        padding-right: 100px;
+        padding-right: 0;
     }
     .card .card-body .newsDesc .card-text,
     .card .card-body .newsBtnMore a,
