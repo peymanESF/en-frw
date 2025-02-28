@@ -1345,14 +1345,15 @@ a.dropdown-item {
 @media (min-width: 768px) {
   .nav-item.dropdown:hover > ul {
     display: block !important;
-    background: var(--color-main);
+    background: rgb(1 164 147 / 80%);
     text-align: center;
+    border-radius: 0 0 5px 5px;
   }
 }
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 60%;
+  left: 10px;
 }
 /* ============ small devices .end// ============ */
 /*** end navbar design ***/
@@ -1704,7 +1705,7 @@ li:has(.menu-item.active) {
 }
 
 .mobile-menu ul li {
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .mobile-menu ul li a {
@@ -1713,13 +1714,15 @@ li:has(.menu-item.active) {
   font-size: 18px;
 }
 .mobile-menu .nav-item.dropdown > ul.show {
-  background: #07c2ae;
+  background: rgb(1 164 147 / 50%);
 }
 @media (max-width: 768px) {
   .mobile-menu .nav-item.dropdown > ul.show {
     display: block;
     position: relative !important;
     transform: none !important;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
   }
 }
 .slider {
@@ -1838,7 +1841,7 @@ ul.socialMediaUl li {
   padding: 0 10px;
 }
 button.dropdown-toggle {
-  background: #01a493;
+  background: rgb(1 164 147 / 20%);
   color: white;
 }
 ul.socialMediaUl li a {
@@ -1875,27 +1878,32 @@ ul.socialMediaUl li a:hover {
     flex-direction: column;
     text-align: left;
   }
-
-  .mobile-menu ul li {
+  .mobile-menu .nav-item .btn.dropdown-toggle.dropdown-toggle-split:focus,
+  .mobile-menu .nav-item .btn.dropdown-toggle.dropdown-toggle-split:active{
+    border:none;
+  }
+  .mobile-menu .nav-item .btn.dropdown-toggle.dropdown-toggle-split.show{
+    border:none;
+  }
+  .mobile-menu > ul > li {
     margin: 10px 0;
     max-width: 100%;
   }
-  .mobile-menu ul.navbar-nav:first-child li:hover a.nav-link {
-    background: #fff;
+  .mobile-menu ul.navbar-nav:first-child li a.nav-link:hover {
+    background: rgb(1 164 147 / 50%);
   }
   .mobile-menu ul.navbar-nav:first-child li,
   .mobile-menu ul.navbar-nav:first-child {
     transition: 0.3s ease-in-out;
   }
-  .mobile-menu ul.navbar-nav:first-child li:hover a {
-    color: #000;
-    border-radius: 5px;
+  .mobile-menu ul.navbar-nav:first-child li a:hover {
+    border-radius: 2px;
   }
-  .mobile-menu ul li a {
+  .mobile-menu ul:not(.socialMediaUl) li a {
     color: white;
     text-decoration: none;
     white-space: normal;
-    padding: 10px;
+    padding: 0px 10px;
   }
   .mobile-menu ul li a.nav-link {
     display: inline-block;

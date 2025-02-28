@@ -44,6 +44,11 @@
   background-size: cover;
   background-position: center;
 }
+.overlay#ClimateChange  {
+  background: url(../img/internalPage/ClimateChange.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .overlay#Forest {
   background: url(../img/internalPage/Forest.jpg) no-repeat;
   background-size: cover;
