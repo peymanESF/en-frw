@@ -1889,6 +1889,10 @@ ul.socialMediaUl li a:hover {
     margin: 10px 0;
     max-width: 100%;
   }
+  .mobile-menu > ul > li.dropdown{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .mobile-menu ul.navbar-nav:first-child li a.nav-link:hover {
     background: rgb(1 164 147 / 50%);
   }
@@ -1907,6 +1911,16 @@ ul.socialMediaUl li a:hover {
   }
   .mobile-menu ul li a.nav-link {
     display: inline-block;
+  }
+  .mobile-menu ul li:has(.show) a.nav-link{
+    border-radius:5px 0px 0px 0px;
+  }
+  .mobile-menu ul li:has(.show) button.dropdown-toggle{
+    border-radius:0px 5px 0px 0px;
+  }
+  .mobile-menu ul li:has(.show) a.nav-link,
+  .mobile-menu ul li:has(.show) button.dropdown-toggle{
+    background:rgb(1 164 147 / 50%);
   }
   .caption {
     width: 90%;
@@ -2455,4 +2469,121 @@ footer .row:has(.footerLogo) {
   bottom: 4.5%;
   -webkit-transform: perspective(200px) rotateX(0);
   transform: perspective(200px) rotateX(0);
+}
+/***** gallery ****/
+section#gallery{
+  background: #807f7f;
+}
+.gallery-owl-carousel {
+  max-width: 100%;
+  overflow: hidden;
+}
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+.gallery-header {
+  padding: 20px 0;
+  font-family: 'Futura Hv BT';
+}
+.gallery-header span{
+  font-size:60px;
+}
+.photo-gallery h2, .video-gallery h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.photo-gallery .title,
+.video-gallery .title{
+  position:relative;
+  margin-bottom: 10px;
+}
+.photo-gallery h2,
+.video-gallery h2{
+  color: #fcc198;
+  position: relative;
+  z-index: 1;
+  background: #807f7f;
+  display: inline;
+  padding: 5px;
+}
+.photo-gallery .title:before{
+  content:'';
+  width:100%;
+  height:5px;
+  background:#fff;
+  position:absolute;
+  bottom:0;
+  z-index: 0;
+}
+.video-gallery h2 {
+  color: #fcc198;
+}
+.video-gallery .title:before{
+  content:'';
+  width:100%;
+  height:5px;
+  background:#fff;
+  position:absolute;
+  bottom:0;
+  z-index: 0;
+}
+.gallery-owl-carousel .item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+.video-card {
+  position: relative;
+  cursor: pointer;
+}
+.video-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.video-card .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+.video-card .video-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.popup-overlay video {
+  width: 90%;
+  height: auto;
+}
+.popup-overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #f5a56e;
+  cursor: pointer;
 }
