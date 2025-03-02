@@ -4,10 +4,10 @@ $(document).ready(function () {
     window.location.href = newsLink;
   });
 
-  
-
   $(".video-card").click(function () {
     const videoUrl = $(this).data("video");
+    const videoTitle = $(this, ".video-title").text();
+    $("#popUpTite").html(videoTitle);
     $(".popup-overlay video").attr("src", videoUrl);
     $(".popup-overlay").fadeIn();
   });
@@ -21,22 +21,22 @@ $(document).ready(function () {
     $("#popupVideo").attr("src", videoSrc); // تنظیم URL ویدئو
     $("#videoPopup").addClass("active"); // نمایش پاپ‌آپ
     $("#popupVideo")[0].play(); // شروع پخش ویدئو
-});
+  });
 
-$(".video-popup-close").on("click", function () {
+  $(".video-popup-close").on("click", function () {
     $("#videoPopup").removeClass("active"); // بستن پاپ‌آپ
     $("#popupVideo")[0].pause(); // توقف پخش ویدئو
     $("#popupVideo").attr("src", ""); // پاک کردن URL برای ریست
-});
+  });
 
-// بستن با کلیک روی بک‌گراند
-$("#videoPopup").on("click", function (e) {
+  // بستن با کلیک روی بک‌گراند
+  $("#videoPopup").on("click", function (e) {
     if (e.target === this) {
-        $(this).removeClass("active");
-        $("#popupVideo")[0].pause();
-        $("#popupVideo").attr("src", "");
+      $(this).removeClass("active");
+      $("#popupVideo")[0].pause();
+      $("#popupVideo").attr("src", "");
     }
-});
+  });
   /*
   $(window).on("scroll", function () {
     let scrollPos = $(document).scrollTop() + 130; // کمی آفست برای بهتر کار کردن
