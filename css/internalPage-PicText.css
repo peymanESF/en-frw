@@ -38,6 +38,7 @@ body[tab="who we are"]:before {
 .topPic img {
   width: 100%;
   max-height: 500px;
+  object-fit: cover;
 }
 #Chareperson > .container > .content {
   padding: 10px 100px;

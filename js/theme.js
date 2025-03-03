@@ -85,7 +85,7 @@ $(document).ready(function () {
     margin: 10,
     nav: false,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
     items: 1,
     onInitialized: function (event) {
