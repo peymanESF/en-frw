@@ -34,7 +34,11 @@ body[tab="who we are"]:before {
   background-size: auto 100%;
   background-position: center;
   z-index: 1;
-  transform: scaleX(-1);
+}
+@media (max-width: 768px) {
+  body[tab="who we are"] #Chareperson > .container:before {
+    transform: scaleX(-1);
+  }
 }
 .topPic img {
   width: 100%;
